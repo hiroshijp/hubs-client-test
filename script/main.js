@@ -14,15 +14,15 @@ import puppeteer from "puppeteer";
   //
   await page.waitForSelector('.Button__button__SO7tb.TextInput__button__QrvX4.Button__accent4__rpZEP');
   await page.click('.Button__button__SO7tb.TextInput__button__QrvX4.Button__accent4__rpZEP');
-  console.log('pass1');
+  console.log('pass1: ルーム入室クリック');
 
   await page.waitForSelector('.Button__button__SO7tb.TextInput__button__QrvX4.Button__accept__Vxz39');
   await page.click('.Button__button__SO7tb.TextInput__button__QrvX4.Button__accept__Vxz39');
-  console.log('pass2');
+  console.log('pass2: アバター承認クリック');
 
   await page.waitForSelector('.Button__button__SO7tb.TextInput__button__QrvX4.Button__primary__V_Unf');
   await page.click('.Button__button__SO7tb.TextInput__button__QrvX4.Button__primary__V_Unf');
-  console.log('pass3');
+  console.log('pass: マイク設定入出クリック');
 
   const commands = ["ArrowUp", "ArrowRight", "ArrowDown", "ArrowLeft"];
   while(true){
