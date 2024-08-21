@@ -1,0 +1,19 @@
+version: "3.7"
+services:
+  puppeteer:
+    build:
+        context: .
+        dockerfile: Dockerfile
+    init: true
+    cap_add:
+      - SYS_ADMIN
+    volumes:
+      - ./script:/app/script
+    working_dir: /app
+    command: "node script/main.js"
+    deploy:
+      resources:
+        limits:
+          cpus: "1.5"
+          memory: 1024M
+        

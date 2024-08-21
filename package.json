@@ -1,0 +1,14 @@
+{
+    "name": "hubs-client-test",
+    "version": "0.1.0",
+    "type": "module",
+    "scripts": {
+    },
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+      "puppeteer": "^23.1.0"
+    }
+  }
+  
